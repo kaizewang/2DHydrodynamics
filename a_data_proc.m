@@ -1,0 +1,10 @@
+x = gca;
+x = x.Children;
+xx = x(1).XData;
+yy1 = x(1).YData;
+yy2 = x(2).YData;
+xx(3) = []; xx(12) = [];
+yy1(3) = [];yy1(12) = []; 
+yy2(3) = [];yy2(12) = [];
+x(1).XData = xx;x(2).XData = xx;
+x(1).YData = yy1;x(2).YData = yy2;
